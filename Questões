@@ -15,5 +15,9 @@
       Controlador Lógico Programável, robótica industrial;
      
 4 - Cite arquiteturas possíveis e as diferenças entre elas.
-
+    RISC - Favorece um conjunto simples e pequeno de instruções que levam aproximadamente a mesma quantidade de tempo para serem executadas.
+    CISC - Possui um conjunto maior de instruções especializadas, algumas delas raramente usadas pelos programas.
+    
 5 - Por que usamos o MSP430 na disciplina, ao invés de outro microcontrolador?
+    O  MSP 430 é um kit que permite programar e realizar o debug através da interface USB, possuindo muitos dos recursos de hardware 
+    necessários para iniciantes, utilizando um baixíssimo consumo elétrico.
