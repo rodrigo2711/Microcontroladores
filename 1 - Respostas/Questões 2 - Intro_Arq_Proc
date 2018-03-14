@@ -1,6 +1,7 @@
 1 - Quais as diferenças entre os barramentos de dados e de endereços?
 	Barramento de dados transmite os dados entre unidades.
-	Barramento de endereço é usada para selecionar a origem ou destino de sinais transmitidos num dos outros barramentos ou numa de suas linhas.
+	Barramento de endereço é usada para selecionar a origem ou destino de sinais transmitidos num dos outros barramentos ou 
+	numa de suas linhas.
 
 2 - Quais são as diferenças entre as memórias RAM e ROM?
 	A memória RAM é uma memória volátil, ou seja, quando desligada seus dados são apagados.
