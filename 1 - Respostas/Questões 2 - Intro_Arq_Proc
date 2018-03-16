@@ -21,10 +21,24 @@ int main(void)
 		printf("%d eh par.\n");
 	return 0;
 }
-3 - Para este código, responda: (a) A variável i é armazenada na memória RAM ou ROM? Por quê? (b) O programa compilado a partir deste código é armazenado na memória RAM ou ROM? Por quê?
+3 - Para este código, responda: 
+(a) A variável i é armazenada na memória RAM ou ROM? Por quê? 
+	Na memória RAM, pois ela é volátil.
+
+(b) O programa compilado a partir deste código é armazenado na memória RAM ou ROM? Por quê?
 
 4 - Quais são as diferenças, vantagens e desvantagens das arquiteturas Harvard e Von Neumann?
+    Arquitetura de Von Neumann:
+ 	Vantagens: Permite armazenar programas, dados, e a alteração dos programas e dados se necessário;
+	Desvantagens: Mais lento. 
 
-5 - Considere a variável inteira i, armazenando o valor 0x8051ABCD. Se i é armazenada na memória a partir do endereço 0x0200, como ficam este byte e os seguintes, considerando que a memória é: (a) Little-endian; (b) Big-endian.
+   Arquitetura de Harvard: 
+	Vantagens: Caminhos de dados e de instrução distintos, dessa forma, seus componentes internos têm a seguinte disposição.
+	Desvantagens: Mais complexa, mais rápida por permitir acesso simultaneo às memórias.
+		
+5 - Considere a variável inteira i, armazenando o valor 0x8051ABCD. Se i é armazenada na memória a partir do endereço 0x0200, como ficam este byte e os seguintes, considerando que a memória é: 
+(a) Little-endian; 
+
+(b) Big-endian.
 
 6 - Sabendo que o processador do MSP430 tem registradores de 16 bits, como ele soma duas variáveis de 32 bits?
