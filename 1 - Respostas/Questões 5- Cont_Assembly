@@ -68,12 +68,12 @@ for(i=0; i<100; i++) A[i] = i*2;
     clr.w R7;
     mov.w #99, R15;
     LOOP:
+    cmp R15, R7;
+    jeq EXIT;
+    inc R7;
     mov R7, R14;
     add R14, R14; i*2
     mov.w 0(R9), R14;
-    inc R7;
-    cmp R15, R7;
-    jeq EXIT;
     jmp LOOP;
     EXIT:
     
