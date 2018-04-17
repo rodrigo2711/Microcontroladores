@@ -14,19 +14,35 @@ de S (ou seja, a variável x) é fornecida pelo registrador R15 também.
 2 - (a) Escreva uma função em C que calcule x elevado à N-ésima potência, seguindo o seguinte protótipo:
 int Potencia(int x, int N);
 
+  int Potencia(int x, int N){
+      int resultado;
+      While(N>=0)
+      Resultado = Resultado + x;
+      N--;
+      return(Resultado)}
 
+int main {
+int resultado;
+int x;
+int N;
+      
+    resultado = Potencia(x,N);
+    return 0;}
+
+           
 (b) Escreva a sub-rotina equivalente na linguagem Assembly do MSP430. x e n são fornecidos através dos registradores R15 e R14,
 respectivamente, e a saída deverá ser fornecida no registrador R15.
 
 3 - Escreva uma sub-rotina na linguagem Assembly do MSP430 que calcula a divisão de a por b, onde a, b e o valor de saída são inteiros
-de 16 bits. a e b são fornecidos através dos registradores R15 e R14, respectivamente, e a saída deverá ser fornecida através do
+de 16 bits. a e b são fornecidos
+através dos registradores R15 e R14, respectivamente, e a saída deverá ser fornecida através do
 registrador R15.
 
 4 - Escreva uma sub-rotina na linguagem Assembly do MSP430 que calcula o resto da divisão de a por b, onde a, b e o valor de saída são
 inteiros de 16 bits. a e b são fornecidos através dos registradores R15 e R14, respectivamente, e a saída deverá ser fornecida através
 do registrador R15.
 
-5 - (a) Escreva uma função em C que indica a primalidade de uma variável inteira sem sinal, retornando o valor 1 se o número for primo,
+5 - (a) Escreva uma função em C que indica a primlidade de uma variável inteira sem sinal, retornando o valor 1 se o número for primo,
 e 0, caso contrário. Siga o seguinte protótipo: int Primalidade(unsigned int x);
 
 (b) Escreva a sub-rotina equivalente na linguagem Assembly do MSP430. A variável de entrada é fornecida pelo registrador R15, e o valor
