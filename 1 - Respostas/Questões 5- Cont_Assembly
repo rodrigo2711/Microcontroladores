@@ -40,6 +40,7 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor√
     add.w R5, R11; R11 = g+10
     add.w R6, R11; R11 = g+h+10
     mov.w R11, R4; R4 = R11
+    jmp SAIDA;
     
     ELSE:  
     mov.w 10, R11; R11 = 10
