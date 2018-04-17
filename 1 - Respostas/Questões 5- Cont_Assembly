@@ -34,7 +34,7 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor�
   else f = g-h-10;
 
     BEGIN:
-    cmp R7, R8; i= R7 j= R8 Testar se R8<R7
+    cmp R7, R8; i= R7 j= R8 Testar se R8<R7 j<i?
     jge ELSE;. Se R8>= R7 vai para ELSE
     mov.w 10, R11; R11 = 10
     add.w R5, R11; R11 = g+10
@@ -65,5 +65,19 @@ while(save[i]!=k) i++;
 4 - "Traduza" o seguinte trecho de código em C para o assembly do MSP430:
 for(i=0; i<100; i++) A[i] = i*2;
   
+    clr.w R7;
+    mov.w #99, R15;
+    LOOP:
+    mov R7, R14;
+    add R14, R14; i*2
+    mov.w 0(R9), R14;
+    inc R7;
+    cmp R15, R7;
+    jeq EXIT;
+    jmp LOOP;
+    EXIT:
+    
+
+    
 5 - "Traduza" o seguinte trecho de código em C para o assembly do MSP430:
 for(i=99; i>=0; i--) A[i] = i*2;
