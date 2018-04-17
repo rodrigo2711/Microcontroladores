@@ -66,7 +66,7 @@ while(save[i]!=k) i++;
 for(i=0; i<100; i++) A[i] = i*2;
   
     clr.w R7;
-    mov.w #99, R15;
+    mov.w #100, R15;
     LOOP:
     cmp R15, R7;
     jeq EXIT;
@@ -81,3 +81,16 @@ for(i=0; i<100; i++) A[i] = i*2;
     
 5 - "Traduza" o seguinte trecho de código em C para o assembly do MSP430:
 for(i=99; i>=0; i--) A[i] = i*2;
+
+    mov#-1.w R15;
+    mov.w #99, R7;
+    LOOP:
+    cmp R15, R7;
+    jeq EXIT;
+    inc R7;
+    mov R7, R14;
+    add R14, R14; i*2
+    mov.w 0(R9), R14;
+    jmp LOOP;
+    EXIT:
+
