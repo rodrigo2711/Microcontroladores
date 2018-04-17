@@ -51,7 +51,21 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor�
     
 3 - "Traduza" o seguinte trecho de código em C para o assembly do MSP430:
 while(save[i]!=k) i++;
-
+ 
+     LOOP:
+     mov.w R7, R12;
+     rla R12;
+     add.w R10, R12;
+     cmp 0(R12), R9; R9 = k
+     jeq EXIT;
+     inc R7;
+     jmp LOOP;
+     EXIT:
+     
+     
+     
+ 
+ 
 4 - "Traduza" o seguinte trecho de código em C para o assembly do MSP430:
 for(i=0; i<100; i++) A[i] = i*2;
   
