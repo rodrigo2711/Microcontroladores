@@ -35,13 +35,13 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor√
 
     BEGIN 
     cmp R7, R8; i= R7 j= R8 Testar se R8<R7
-    jge IF;. Se R8>= R7 vai para IF 
+    jge ELSE;. Se R8>= R7 vai para ELSE
 
-    mov.w R4, R11;
-    add.w R5, R11; f= f+g
-    add.w R6, R11; f= g+h
-    add.w #10, R11; f= g+h+10
-    mov.w R11, R4;
+
+    mov.w 10, R11; R11 = 10
+    add.w R5, R11; R11 = g+10
+    add.w R6, R11; R11 = g+h+10
+    mov.w R11, R4; R4 = R11:
  
     
     
