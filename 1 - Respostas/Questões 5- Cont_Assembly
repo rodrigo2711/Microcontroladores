@@ -33,7 +33,18 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor√
   if(i>j) f = g+h+10;
   else f = g-h-10;
 
-      
+    BEGIN 
+    cmp R7, R8; i= R7 j= R8 Testar se R8<R7
+    jge IF;. Se R8>= R7 vai para IF 
+
+    mov.w R4, R11;
+    add.w R5, R11; f= f+g
+    add.w R6, R11; f= g+h
+    add.w #10, R11; f= g+h+10
+    mov.w R11, R4;
+ 
+    
+    
 3 - "Traduza" o seguinte trecho de c√≥digo em C para o assembly do MSP430:
 while(save[i]!=k) i++;
 
